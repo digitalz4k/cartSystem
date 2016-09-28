@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Mon panier</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+		span.prix {
+		  font-size: 1.5em;
+		  margin-bottom: 10px;
+		  display:block;
+		}
+
+		.img-responsive {
+		  margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container text-center">
+	  <h1>Ma boutique !</h1>
+	  
+	  <div class="row">
+	    <div class="col-xs-8">
+	      <div class="panel panel-default">
+	        <div class="panel-heading">
+	          Les produits
+	        </div>
+	        <div class="panel-body">
+	          <div class="col-xs-4">
+	            <div class="panel panel-default" id="produit-1">
+	              <div class="panel-body text-center">
+	                <h3>Produit #1</h3>
+	                <img src="http://lorempicsum.com/nemo/255/200/2" alt="" class="img-responsive" />
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, quam?</p>
+	                <span class="prix">2,85 €</span>
+	                <a href="#!" class="btn btn-block btn-primary add" data-id="1" id="btn1">
+	                  Ajouter
+	                </a>
+	                <input type="hidden" id="prix-1" value="2.85" />
+	              </div>
+	            </div>
+	          </div>
+	          <div class="col-xs-4">
+	            <div class="panel panel-default" id="produit-2">
+	              <div class="panel-body text-center">
+	                <h3>Produit #2</h3>
+	                <img src="http://lorempicsum.com/nemo/255/200/6" alt="" class="img-responsive" />
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, quam?</p>
+	                <span class="prix">10,85 €</span>
+	                <a href="#!" class="btn btn-block btn-primary add" data-id="2" id="btn2">
+	                  Ajouter
+	                </a>
+	                <input type="hidden" id="prix-2" value="10.85" />
+	              </div>
+	            </div>
+	          </div>
+	          <div class="col-xs-4">
+	            <div class="panel panel-default" id="produit-3">
+	              <div class="panel-body text-center">
+	                <h3>Produit #3</h3>
+	                <img src="http://lorempicsum.com/nemo/255/200/4" alt="" class="img-responsive" />
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, quam?</p>
+	                <span class="prix">5,50 €</span>
+	                <a href="#!" class="btn btn-block btn-primary add" data-id="3" id="btn3">
+	                  Ajouter
+	                </a>
+	                <input type="hidden" id="prix-3" value="5.5" />
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="col-xs-4">
+	      <div class="panel panel-default">
+	        <div class="panel-heading">
+	          Mon panier
+	        </div>
+	        <div class="panel-body text-left">
+	          <div id="cart">
+	          
+	          </div>
+	          <div class="clearfix">&nbsp;</div>
+	          <a href="#" onclick="alert('Ok, on va commander !')" class="btn btn-success btn-block" id="order">Commander !</a>
+	          
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="panier.js"></script>
+</body>
+</html>
